@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <header>
+    <div class="container">
+        <div class="header_logo">Край Бай</div>
+        <nav class="nav">
+            <a href="{{ url_for('minsk') }}"><button>Мінск</button></a>
+            <a href="{{ url_for('vitebsk') }}"><button>Віцебск</button></a>
+            <a href="{{ url_for('mogilev') }}"><button>Магілёў</button></a>
+            <a href="{{ url_for('gomel') }}"><button>Гомель</button></a>
+            <a href="{{ url_for('brest') }}"><button>Брэст</button></a>
+            <a href="{{ url_for('grodno') }}"><button>Гродна</button></a>
+        </nav>
+    </div>
+
+    </header>
+{% endblock %}

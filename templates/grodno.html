@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Гродна</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html {
+		    background: url(../static/grodno.png); /* Фоновый цвет и фоновый рисунок*/
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+		    background-repeat: no-repeat; /* Изображение повторяется по горизонтали */
+            font-family: 'Oswald', sans-serif;
+	    }
+        button {
+            border: none;
+            background-color:transparent;
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0.5em;
+        }
+        header {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            color: white;
+        }
+        .container{
+            max-width: 1500px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header_logo">Край Бай</div>
+        <nav class="nav">
+            <a href="{{ url_for("main_page") }}"><button>На Карту</button></a>
+            <a href="{{ url_for("twseven") }}"><button>27</button></a>
+            <a href="{{ url_for("tweight") }}"><button>28</button></a>
+            <a href="{{ url_for("twnine") }}"><button>29</button></a>
+            <a href="{{ url_for("thirty") }}"><button>30</button></a>
+            <a href="{{ url_for("trone") }}"><button>31</button></a>
+        </nav>
+    </div>
+
+</header>
+
+</body>
+</html>

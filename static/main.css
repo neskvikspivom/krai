@@ -1,0 +1,35 @@
+html {
+		background: url(../static/bg.png); /* Фоновый цвет и фоновый рисунок*/
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+		background-repeat: no-repeat; /* Изображение повторяется по горизонтали */
+        font-family: 'Oswald', sans-serif;
+
+	}
+button {
+    border: none;
+    background-color:transparent;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.5em;
+        }
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: white;
+        }
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        }
